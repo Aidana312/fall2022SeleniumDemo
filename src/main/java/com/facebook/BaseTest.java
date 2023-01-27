@@ -19,7 +19,7 @@ public abstract class BaseTest {
         WebDriverManager.chromedriver().setup(); // Configure ChromeDriver to connect browser
         driver = new ChromeDriver(); // Creating instance of ChromeDriver
         driver.manage().window().maximize(); // Maximizing window
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3));
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(60));
         browserHelper = new BrowserHelper(driver);
         alertHelper = new AlertHelper(driver);
    }
